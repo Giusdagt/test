@@ -5,8 +5,6 @@ Avvia l’intero sistema di trading AI: raccolta dati realtime, training AI, pre
 import builtins
 import warnings
 import sys
-#from ecosystem_guardian import start_guardian_in_background
-
 import os
 import gc
 import psutil
@@ -195,8 +193,8 @@ class TradingSystem:
             await asyncio.sleep(10)
 
 if __name__ == "__main__":
-    ENABLE_GUARDIAN = True
-    SILENCE_SYSTEM_OUTPUT = True
+    ENABLE_GUARDIAN = False
+    SILENCE_SYSTEM_OUTPUT = False
 
     if ENABLE_GUARDIAN:
         try:
