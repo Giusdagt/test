@@ -1,0 +1,27 @@
+CODICE AVVIO
+python test_trading_bot
+
+python C:\Bot_Trading\trading_bot.py
+
+.\virtuale\Scripts\activate entrare nella cartella virtuale
+
+comando nel terminale per installare tutti i pachetti in una volta:
+pip install -r requirements.txt
+
+✅Comando PowerShell per disattivare MT5:
+$env:MOCK_MT5="1"; python test.py
+
+✅ Oppure da CMD (Prompt dei comandi di Windows):
+set MOCK_MT5=1
+python test.py
+
+
+chiave api alpha X46XNLZ3XMMFAMH2 25 richieste al giorno
+
+
+@echo off
+cd /d C:\bot
+call virtuale\Scripts\activate.bat
+python start.py
+pause
+

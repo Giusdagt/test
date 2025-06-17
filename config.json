@@ -1,0 +1,78 @@
+{
+    "api_keys": {
+        "DANNY": {
+            "binance": {
+                "api_key": "P5P3ITLYe8lWBrQBe52Ch2m1v0f3pw0VH6b1A6hKmz8jrPxBEYLdcgkdizMo1VRE",
+                "api_secret": "1aCRkdKX548uDegoRETE1Ke6kqHp5cTMKPlIy6o6dQLWEGFsYItxOKz5isYIsUHw"
+            },
+            "roboforex": {
+                "api_key": "YOUR_ROBOFOREX_API_KEY",
+                "api_secret": "YOUR_ROBOFOREX_SECRET",
+                "mt5_login": "501156223",
+                "mt5_password": "Z@P1YfLt",
+                "mt5_server": "RoboForex-Pro",
+                "account_type": "real"
+            }
+        },
+        "GIUSEPPE": {
+            "binance": {
+                "api_key": "h4hYfWmXJpJ9Fa4OyCvMTTwgKREDNlZGRwU6NPA41LPUMzGpruIwkvwNUG8rJW3U",
+                "api_secret": "sJhCwBsHg6OKU9kEACE6uPY9019pVni4Aood3UTomMd5C1uIJ8HvZelqJtw6lrNK"
+            },
+            "roboforex": {
+                "api_key": "YOUR_ROBOFOREX_API_KEY",
+                "api_secret": "YOUR_ROBOFOREX_SECRET",
+                "mt5_login": "87654321",
+                "mt5_password": "your_mt5_password",
+                "mt5_server": "RoboForex-ProCent",
+                "account_type": "real"
+            }
+        }
+    },
+    "IS_REAL": true,
+    "ACTIVE_BROKER": "roboforex",
+    "initial_capital": 100,
+    "risk_management": {
+        "max_drawdown": 0.20,
+        "risk_per_trade": 0.02,
+        "max_exposure": 0.5,
+        "trailing_stop_pct": 0.05,
+        "take_profit_pct": 0.10,
+        "max_trades": 5,
+        "use_auto_risk": true,
+        "adaptive_stop_loss": true,
+        "adjust_risk": true,
+        "calculate_dynamic_lot": true
+    },
+    "trading_strategy": {
+        "auto_tune_risk": true,
+        "market_extreme_filter": true,
+        "adaptive_risk_management": true,
+        "strategy_types": ["scalping", "macro", "intraday", "swing"],
+        "adjust_lot_by_strategy": true
+    },
+    "trading_parameters": {
+        "timeframes": ["1m", "5m", "15m", "30m", "1h", "4h", "1d"],
+        "market_type": "spot",
+        "pairs": [],
+        "asset_classes": {
+            "crypto": false,
+            "forex": false,
+            "indices": false,
+            "commodities": false
+        }
+    },
+    "database": {
+        "save_trades": false,
+        "database_type": "sqlite",
+        "database_name": "trades.db"
+    },
+    "logging": {
+        "enable_dashboard": false,
+        "log_level": "INFO"
+    },
+    "security": {
+        "use_2fa": false,
+        "enable_ip_whitelisting": false
+    }
+}
